@@ -67,11 +67,59 @@
         <div class="d-flex flex-row container">
             <div class="col-8">
                 <div>
-                    <span>Name:</span>
-                    <span><?php echo $row['std_name'] ?></span>
+                    <span class="header">Name:</span>
+                    <span class="pl-4"><?php echo $row['std_name'] ?></span>
+                </div>
+                <div>
+                    <span class="header">Father’s/Guardian’s Name:</span>
+                    <span class="pl-4"><?php echo $row['guardian_name'] ?></span>
+                </div>
+                <div>
+                    <span class="header">Mother’s Name:</span>
+                    <span class="pl-4"><?php echo $row['guardian_name'] ?></span>
+                </div>
+                <div>
+                    <span class="header">Date of Birth:</span>
+                    <span class="pl-4"><?php echo $row['dob'] ?></span>
+                </div>
+                <div>
+                    <span class="header">Permanent Address:</span>
+                    <span class="pl-4"><?php echo $row['address'] ?></span>
+                </div>
+                <div>
+                    <span class="header">Degree Awarded:</span>
+                    <span class="pl-4"><?php echo $row['degree_awarded'] ?></span>
+                </div>
+                <div>
+                    <span class="header">Year of Passing:</span>
+                    <span class="pl-4"><?php echo $row['session'] ?></span>
+                </div>
+                <div>
+                    <span class="header">Certificate No.:</span>
+                    <span class="pl-4"><?php echo $row['cer_no'] ?></span>
+                </div>
+                <div>
+                    <span class="header">Department:</span>
+                    <span class="pl-4"><?php echo $row['deptt'] ?></span>
+                </div>
+                <div>
+                    <span class="header">Faculty:</span>
+                    <span class="pl-4"><?php echo $row['std_name'] ?></span>
+                </div>
+                <div>
+                    <span class="header">Registration No.:</span>
+                    <span class="pl-4"><?php echo $row['std_name'] ?></span>
+                </div>
+                <div>
+                    <span class="header">Year of Admission:</span>
+                    <span class="pl-4"><?php echo $row['std_name'] ?></span>
+                </div>
+                <div>
+                    <span class="header">Title of the Thesis:</span>
+                    <span class="pl-4"><?php echo $row['std_name'] ?></span>
                 </div>
             </div>
-            <div class="col-4" style="">
+            <div class="col-4" style="padding-left: 250px;">
                 <div id="id-photo">+ Add Photo</div>
             </div>
         </div>
