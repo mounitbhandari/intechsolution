@@ -36,13 +36,17 @@
         $uid =$_GET['uid'];
         // print($uid);
     ?>
+    
       <?php
-        $servername = "localhost";
-        $username = "root";
-        $password = "sukantahui";
+        $env = parse_ini_file('.env');
+        $servername = $env["DB_HOST"];
+        $username = $env["DB_USERNAME"];
+        $password = $env["DB_PASSWORD"];
+        $database = $env["DB_DATABASE"];
+        
         // laravel_10_db is database
         try {
-        $conn = new PDO("mysql:host=$servername;dbname=certificate_db", $username, $password);
+        $conn = new PDO("mysql:host=$servername;dbname=$database", $username, $password);
         // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         // echo "Connected successfully";
@@ -64,6 +68,7 @@
     ?>
 
 <div>
+    
         <div class="d-flex flex-row container">
             <div class="col-8">
                 <div>
