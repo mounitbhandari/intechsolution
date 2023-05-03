@@ -66,68 +66,71 @@
         // print($row['std_name']);
         // echo $row['uid'];
     ?>
+    
 
-<div>
-        <div class="d-flex flex-row p-5">
+    <div class="outer-div pl-5 pr-5">
+        <div class="d-flex flex-row">
             <div class="col-8">
-                <div class="main">
-                    <span class="topic">Name:</span>
-                    <span class="details"><?php echo $row['std_name'] ?></span>
-                </div>
-                <div class="main">
-                    <span class="topic">Father’s/Guardian’s Name:</span>
-                    <span class="details"><?php echo $row['guardian_name'] ?></span>
-                </div>
-                <div class="main">
-                    <span class="topic">Mother’s Name:</span>
-                    <span class="details"><?php echo $row['guardian_name'] ?></span>
-                </div>
-                <div class="main">
-                    <span class="topic">Date of Birth:</span>
-                    <span class="details"><?php echo $row['dob'] ?></span>
-                </div>
-                <div class="main">
-                    <span class="topic">Permanent Address:</span>
-                    <span class="details"><?php echo $row['address'] ?></span>
-                </div>
-                <div class="main">
-                    <span class="topic">Degree Awarded:</span>
-                    <span class="details"><?php echo $row['degree_awarded'] ?></span>
-                </div>
-                <div class="main">
-                    <span class="topic">Year of Passing:</span>
-                    <span class="details"><?php echo $row['session'] ?></span>
-                </div>
-                <div class="main">
-                    <span class="topic">Certificate No.:</span>
-                    <span class="details"><?php echo $row['cer_no'] ?></span>
-                </div>
-                <div class="main">
-                    <span class="topic">Department:</span>
-                    <span class="details"><?php echo $row['deptt'] ?></span>
-                </div>
-                <div class="main">
-                    <span class="topic">Faculty:</span>
-                    <span class="details"><?php echo $row['std_name'] ?></span>
-                </div>
-                <div class="main">
-                    <span class="topic">Registration No.:</span>
-                    <span class="details"><?php echo $row['regn_no'] ?></span>
-                </div>
-                <div class="main">
-                    <span class="topic">Year of Admission:</span>
-                    <span class="details"><?php echo $row['std_name'] ?></span>
-                </div>
-                <div class="main">
-                    <span class="topic">Title of the Thesis:</span>
-                    <span class="details"><?php echo $row['thesis_title'] ?></span>
-                </div>
+                <table>
+                    <tr>
+                        <td><span class="topic">Name:</span></td>
+                        <td><span class="details"><?php echo $row['std_name'] ?></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="topic">Father’s/Guardian’s Name:</span></td>
+                        <td><span class="details"><?php echo $row['guardian_name'] ?></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="topic">Mother’s Name:</span></td>
+                        <td><span class="details"><?php echo $row['guardian_name'] ?></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="topic">Date of Birth:</span></td>
+                        <td><span class="details"><?php echo $row['dob'] ?></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="topic">Permanent Address:</span></td>
+                        <td><span class="details"><?php echo $row['address'] ?></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="topic">Degree Awarded:</span></td>
+                        <td><span class="details"><?php echo $row['degree_awarded'] ?></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="topic">Year of Passing:</span></td>
+                        <td><span class="details"><?php echo $row['session'] ?></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="topic">Certificate No.:</span></td>
+                        <td><span class="details"><?php echo $row['cer_no'] ?></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="topic">Department:</span></td>
+                        <td><span class="details"><?php echo $row['deptt'] ?></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="topic">Faculty:</span></td>
+                        <td><span class="details"><?php echo $row['deptt'] ?></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="topic">Registration No.:</span></td>
+                        <td><span class="details"><?php echo $row['regn_no'] ?></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="topic">Year of Admission:</span></td>
+                        <td><span class="details"><?php echo $row['session'] ?></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="topic">Title of the Thesis:</span></td>
+                        <td><span class="details"><?php echo $row['thesis_title'] ?></span></td>
+                    </tr>
+                </table>
             </div>
             <div class="col-4" style="padding-left: 250px;">
                 <div id="id-photo">Photo</div>
             </div>
         </div>
-        
+            
     </div>
     <?php
         // echo "hello"
