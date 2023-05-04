@@ -121,13 +121,13 @@
                         <td><span class="details"><?php echo $row['session'] ?></span></td>
                     </tr>
                     <tr>
-                        <td><span class="topic">Title of the Thesis:</span></td>
+                        <td><span class="topic">Title of the Thesis1:</span></td>
                         <td><span class="details"><?php echo $row['thesis_title'] ?></span></td>
                     </tr>
                 </table>
             </div>
             <div class="col-4" style="padding-left: 250px;">
-                <div id="id-photo">Photo</div>
+                <div id="id-photo"><img src="pictures/<?php echo $row['photo_filename'] ?>" alt=""></div>
             </div>
         </div>
             
