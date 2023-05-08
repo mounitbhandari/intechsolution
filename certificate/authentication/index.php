@@ -22,6 +22,22 @@
     </style> -->
 </head>
 <body >
+    <?php 
+        function tableField($field, $name){
+            $ans="";
+            if(strlen($field)>0){
+                $ans.= '<tr>';
+                $ans.= '<td class="topic">';
+                $ans.= $name;
+                $ans.= '</td>';
+                $ans.= '<td>';
+                $ans.= $field;
+                $ans.= '</td>';
+                $ans.= '</tr>';
+                echo  $ans;
+            }
+        }
+    ?>
     
     <div id="heading">Bidhan Chandra Krishi Viswavidyalaya</div>
     <div id="heading2">Office of the Registrar (Examination Section)</div>
@@ -67,63 +83,26 @@
         // echo $row['uid'];
     ?>
     
-
+    
     <div class="outer-div pl-5 pr-5">
         <div class="d-flex flex-row">
             <div class="col-8">
                 <table>
-                    <tr>
-                        <td><span class="topic">Name:</span></td>
-                        <td><span class="details"><?php echo $row['std_name'] ?></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="topic">Father’s/Guardian’s Name:</span></td>
-                        <td><span class="details"><?php echo $row['guardian_name'] ?></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="topic">Mother’s Name:</span></td>
-                        <td><span class="details"><?php echo $row['guardian_name'] ?></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="topic">Date of Birth:</span></td>
-                        <td><span class="details"><?php echo $row['dob'] ?></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="topic">Permanent Address:</span></td>
-                        <td><span class="details"><?php echo $row['address'] ?></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="topic">Degree Awarded:</span></td>
-                        <td><span class="details"><?php echo $row['degree_awarded'] ?></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="topic">Year of Passing:</span></td>
-                        <td><span class="details"><?php echo $row['session'] ?></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="topic">Certificate No.:</span></td>
-                        <td><span class="details"><?php echo $row['cer_no'] ?></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="topic">Department:</span></td>
-                        <td><span class="details"><?php echo $row['deptt'] ?></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="topic">Faculty:</span></td>
-                        <td><span class="details"><?php echo $row['deptt'] ?></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="topic">Registration No.:</span></td>
-                        <td><span class="details"><?php echo $row['regn_no'] ?></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="topic">Year of Admission:</span></td>
-                        <td><span class="details"><?php echo $row['session'] ?></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="topic">Title of the Thesis1:</span></td>
-                        <td><span class="details"><?php echo $row['thesis_title'] ?></span></td>
-                    </tr>
+
+                    <?php tableField($row['std_name'],"Name: "); ?>
+                    <?php tableField($row['guardian_name'],"Father’s/Guardian’s Name: "); ?>
+                    <?php tableField($row['guardian_name'],"Mother’s Name: "); ?>
+                    <?php tableField($row['dob'],"Date of Birth: "); ?>
+                    <?php tableField($row['address'],"Permanent Address: "); ?>
+                    <?php tableField($row['degree_awarded'],"Degree Awarded: "); ?>
+                    <?php tableField($row['session'],"Year of Passing: "); ?>
+                    <?php tableField($row['cer_no'],"Certificate No.: "); ?>
+                    <?php tableField($row['deptt'],"Department: "); ?>
+                    <?php tableField($row['deptt'],"Faculty: "); ?>
+                    <?php tableField($row['regn_no'],"Registration No.: "); ?>
+                    <?php tableField($row['session'],"Year of Admission: "); ?>
+                    <?php tableField($row['thesis_title'],"Title of the Thesis1: "); ?>
+                    
                 </table>
             </div>
             <div class="col-4" style="padding-left: 250px;">
