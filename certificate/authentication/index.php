@@ -21,7 +21,7 @@
         }
     </style> -->
 </head>
-<body >
+<body id="body-div">
     <?php 
         function tableField($field, $name){
             $ans="";
@@ -39,7 +39,7 @@
         }
     ?>
     
-    <div id="heading">Bidhan Chandra Krishi Viswavidyalaya</div>
+    <div id="heading">Bidhan1 Chandra Krishi Viswavidyalaya</div>
     <div id="heading2">Office of the Registrar (Examination Section)</div>
     <div id="heading3">Mohanpur, P.O. - Krishi Viswavidyalaya, Dist.- Nadia, West Bengal, India, PIN - 741252</div>
     <div id="heading4">Email: registrar@bckv.edu.in; Website: www.bckv.edu.in</div>
